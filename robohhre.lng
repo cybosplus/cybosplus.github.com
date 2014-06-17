@@ -1,0 +1,13 @@
+
+[GlossaryTab]
+TabCaption=&Glossary
+TermCaption=&Term
+DefinitionCaption=&Definition For:
+
+[BrowseSequence]
+PreCaption=Previous
+PreTooltip=Previous Topic
+NextCaption=Next
+NextTooltip=Next Topic
+BlockTooltip=Select Block
+

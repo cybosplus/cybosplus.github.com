@@ -49,9 +49,14 @@ object.</font><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bo
 </li>
 
 <li style="font-size: 10pt;">
-<p style="margin-left: 18.5pt; margin-right: 5.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">반환값</font><font style="font-family: 'Gulim'; font-size: 9pt;">:</font> <font style="font-family: 'Gulim'; font-size: 9pt;">종목명</font></p>
-</li>
-</ul>
+<p style="margin-left: 18.5pt; margin-right: 5.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">반환값</font><font style="font-family: 'Gulim'; font-size: 9pt;">:</font> <font style="font-family: 'Gulim'; font-size: 9pt;">종목명</font></p></li>
+</ul><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold; color: blue;"> Python ex)</font>
+
+
+
+<font style="font-family: 'Gulim'; font-size: 9pt;"><br>
+&gt;&gt;&gt; import win32com.client <br>
+&gt;&gt;&gt; inCpStockCode = win32com.client.Dispatch("CpUtil.CpStockCode")<br>&gt;&gt;&gt; inCpStockCode.CodeToName("A000100") &nbsp; &nbsp;# 유한양행&nbsp;<br>'유한양행'<br><br></font>
 
 <p style="text-indent: 6.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">value = object.</font>
 <font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold;">NameToCode(name)</font></p>
@@ -64,9 +69,14 @@ object.</font><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bo
 </li>
 
 <li style="font-size: 10pt;">
-<p style="margin-left: 18.5pt; margin-right: 5.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">반환값</font><font style="font-family: 'Gulim'; font-size: 9pt;">:</font> <font style="font-family: 'Gulim'; font-size: 9pt;">종목코드</font></p>
-</li>
-</ul>
+<p style="margin-left: 18.5pt; margin-right: 5.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">반환값</font><font style="font-family: 'Gulim'; font-size: 9pt;">:</font> <font style="font-family: 'Gulim'; font-size: 9pt;">종목코드</font></p></li>
+</ul><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold; color: blue;"> Python ex)</font>
+
+
+
+<font style="font-family: 'Gulim'; font-size: 9pt;"><br>
+&gt;&gt;&gt; import win32com.client <br>
+&gt;&gt;&gt; inCpStockCode = win32com.client.Dispatch("CpUtil.CpStockCode")<br></font><font style="font-family: 'Gulim'; font-size: 9pt;">&gt;&gt;&gt; inCpStockCode.NameToCode("유한양행")<br>'A000100'</font><br>
 
 <p style="text-indent: 6.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">value =</font> <font style="font-family: 'Gulim'; font-size: 9pt;">object.</font><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold;">CodeToFullCode(code)</font></p>
 
@@ -130,10 +140,14 @@ object.</font> <font style="font-family: 'Gulim'; font-size: 9pt; font-weight: b
 </li>
 
 <li style="font-size: 10pt;">
-<p style="margin-left: 19.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">반환값</font><font style="font-family: 'Gulim'; font-size: 9pt;">: Index</font>
-</p>
-</li>
-</ul>
+<p style="margin-left: 19.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">반환값</font><font style="font-family: 'Gulim'; font-size: 9pt;">: Index</font></p></li>
+</ul><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold; color: blue;"> Python ex)</font>
+
+
+
+<font style="font-family: 'Gulim'; font-size: 9pt;"><br>
+&gt;&gt;&gt; import win32com.client <br>
+&gt;&gt;&gt; inCpStockCode = win32com.client.Dispatch("CpUtil.CpStockCode")<br>&gt;&gt;&gt; inCpStockCode.CodeToIndex("A000100")<br>8</font><br>
 
 <p><font style="font-family: 'Gulim'; font-size: 9pt;">value =
 object.</font><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold;">GetCount()</font>
@@ -146,9 +160,14 @@ object.</font><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bo
 
 <ul>
 <li style="font-size: 10pt;">
-<p style="margin-left: 19.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">반환값</font><font style="font-family: 'Gulim'; font-size: 9pt;">:</font> <font style="font-family: 'Gulim'; font-size: 9pt;">종목코드</font> <font style="font-family: 'Gulim'; font-size: 9pt;">개수</font></p>
-</li>
-</ul>
+<p style="margin-left: 19.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">반환값</font><font style="font-family: 'Gulim'; font-size: 9pt;">:</font> <font style="font-family: 'Gulim'; font-size: 9pt;">종목코드</font> <font style="font-family: 'Gulim'; font-size: 9pt;">개수</font></p></li>
+</ul><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold; color: blue;"> Python ex)</font>
+
+
+
+<font style="font-family: 'Gulim'; font-size: 9pt;"><br>
+&gt;&gt;&gt; import win32com.client <br>
+&gt;&gt;&gt; inCpStockCode = win32com.client.Dispatch("CpUtil.CpStockCode")<br>&gt;&gt;&gt; inCpStockCode.GetCount()<br>2189</font><br>
 
 <p><font style="font-family: 'Gulim'; font-size: 9pt;">value =
 object.</font><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold;">GetData(type,index)</font>
@@ -179,9 +198,14 @@ object.</font><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bo
 </li>
 
 <li style="font-size: 10pt;">
-<p style="margin-left: 19.75pt; margin-right: 5.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">반환값</font><font style="font-family: 'Gulim'; font-size: 9pt;">:</font> <font style="font-family: 'Gulim'; font-size: 9pt;">해당데이터</font></p>
-</li>
-</ul>
+<p style="margin-left: 19.75pt; margin-right: 5.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">반환값</font><font style="font-family: 'Gulim'; font-size: 9pt;">:</font> <font style="font-family: 'Gulim'; font-size: 9pt;">해당데이터</font></p></li>
+</ul><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold; color: blue;"> Python ex)</font>
+
+
+<p style="margin-left: 4.5pt; margin-right: 5.75pt;">
+<font style="font-family: 'Gulim'; font-size: 9pt;">
+&gt;&gt;&gt; import win32com.client <br>
+&gt;&gt;&gt; inCpStockCode = win32com.client.Dispatch("CpUtil.CpStockCode")<br>&gt;&gt;&gt; for i in range(10):<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;print(inCpStockCode.GetData(1,i)) &nbsp; &nbsp;# 0~9번에 대한 종목 코드를 리턴<br>동화약품<br>KR모터스<br>경방<br>메리츠화재<br>삼양홀딩스<br>삼양홀딩스우<br>하이트진로<br>하이트진로2우B<br>유한양행<br>유한양행우</font></p>
 
 <p><font style="font-family: 'Gulim'; font-size: 9pt;">value =
 object.</font><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold;">Get</font><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold;">PriceUnit</font><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold;">(</font><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold;">code,
@@ -211,13 +235,7 @@ basePrice, directionUp</font><font style="font-family: 'Gulim'; font-size: 9pt; 
 
 <li style="font-size: 10pt;">
 <p style="margin-left: 19.75pt; margin-right: 5.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">반환값</font><font style="font-family: 'Gulim'; font-size: 9pt;">(</font><font style="font-family: 'Gulim'; font-size: 9pt;">long)</font><font style="font-family: 'Gulim'; font-size: 9pt;">:</font> <font style="font-family: 'Gulim'; font-size: 9pt;">호가단위</font></p></li>
-</ul><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold; color: blue;"> Python ex)</font>
-
-
-<p style="margin-left: 4.5pt; margin-right: 5.75pt;">
-<font style="font-family: 'Gulim'; font-size: 9pt;">
-&gt;&gt;&gt; import win32com.client <br>
-&gt;&gt;&gt; inCpStockCode = win32com.client.Dispatch("CpUtil.CpStockCode")<br>&gt;&gt;&gt; inCpStockCode.CodeToName("A000100") &nbsp; &nbsp;# 유한양행&nbsp;<br>'유한양행'<br>&gt;&gt;&gt; inCpStockCode.NameToCode("유한양행")<br>'A000100'<br>&gt;&gt;&gt; inCpStockCode.NameToCode("NAVER")<br>'A035420'<br>&gt;&gt;&gt; for i in range(10):<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;print(inCpStockCode.GetData(1,i)) &nbsp; &nbsp;# 0~9번에 대한 종목 코드를 리턴<br>동화약품<br>KR모터스<br>경방<br>메리츠화재<br>삼양홀딩스<br>삼양홀딩스우<br>하이트진로<br>하이트진로2우B<br>유한양행<br>유한양행우</font></p><p style="margin-left: 4.5pt; margin-right: 5.75pt;"><script type="text/JavaScript">var fe = FindFrame("toc", top);
+</ul><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold; color: blue;"><br></font><p style="margin-left: 4.5pt; margin-right: 5.75pt;"><script type="text/JavaScript">var fe = FindFrame("toc", top);
 if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
   if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
     chmtop.c2wtopf.jstree.OpenTreeNode("" + chmtop.c2wtopf.pageid);

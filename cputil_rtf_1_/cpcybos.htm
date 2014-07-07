@@ -47,9 +47,18 @@ object.</font><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bo
 
 <ul>
 <li style="font-size: 10pt;">
-<p style="margin-left: 18.5pt; margin-right: 5.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">반환값</font><font style="font-family: 'Gulim'; font-size: 9pt;">: 0-</font> <font style="font-family: 'Gulim'; font-size: 9pt;">연결</font> <font style="font-family: 'Gulim'; font-size: 9pt;">끊김</font><font style="font-family: 'Gulim'; font-size: 9pt;">, 1-</font> <font style="font-family: 'Gulim'; font-size: 9pt;">연결</font> <font style="font-family: 'Gulim'; font-size: 9pt;">정상</font></p>
-</li>
-</ul>
+<p style="margin-left: 18.5pt; margin-right: 5.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">반환값</font><font style="font-family: 'Gulim'; font-size: 9pt;">: 0-</font> <font style="font-family: 'Gulim'; font-size: 9pt;">연결</font> <font style="font-family: 'Gulim'; font-size: 9pt;">끊김</font><font style="font-family: 'Gulim'; font-size: 9pt;">, 1-</font> <font style="font-family: 'Gulim'; font-size: 9pt;">연결</font> <font style="font-family: 'Gulim'; font-size: 9pt;">정상</font></p></li></ul><br><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold; color: blue;"> Python ex)</font>
+
+
+<p style="margin-left: 4.5pt; margin-right: 5.75pt;">
+<font style="font-family: 'Gulim'; font-size: 9pt;">
+&gt;&gt;&gt; import win32com.client <br>
+&gt;&gt;&gt; inCpCybos = win32com.client.Dispatch("CpUtil.CpCybos") <br>
+&gt;&gt;&gt; if inCpCybos.IsConnect == 1: <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; print("연결 정상") <br>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp; else: <br>
+	&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;print("연결 끊김")&nbsp;</font></p>
 
 <p style="margin-right: 5.75pt; text-indent: 4.5pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">value =
 object.</font><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold;">ServerType</font>
@@ -129,27 +138,7 @@ object.</font><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bo
 <p style="margin-left: 4.5pt; margin-right: 5.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt;">가능한</font> <font style="font-family: 'Gulim'; font-size: 9pt;">프로그램을</font> <font style="font-family: 'Gulim'; font-size: 9pt;">정리하고</font> <font style="font-size: 9pt;">&nbsp;</font><font style="font-family: 'Gulim'; font-size: 9pt;">안전하게</font> <font style="font-family: 'Gulim'; font-size: 9pt;">종료하</font><font style="font-family: 'Gulim'; font-size: 9pt;">도록</font> <font style="font-family: 'Gulim'; font-size: 9pt;">프로그램을</font> <font style="font-family: 'Gulim'; font-size: 9pt;">작성해야</font> <font style="font-family: 'Gulim'; font-size: 9pt;">합니다</font><font style="font-family: 'Gulim'; font-size: 9pt;">.</font></p>
 
 
-<p style="margin-left: 4.5pt; margin-right: 5.75pt;"><font style="font-family: 'Gulim'; font-size: 9pt; font-weight: bold; color: blue;">
-<br> Python ex)</font>
-</p>
-
-<p style="margin-left: 4.5pt; margin-right: 5.75pt;">
-<font style="font-family: 'Gulim'; font-size: 9pt;">
-&gt;&gt;&gt; import win32com.client <br>
-&gt;&gt;&gt; inCpCybos = win32com.client.Dispatch("CpUtil.CpCybos") <br>
-&gt;&gt;&gt; if inCpCybos.IsConnect == 1: <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; print("연결 정상") <br>
-	&nbsp;&nbsp;&nbsp;&nbsp;
-	&nbsp; else: <br>
-	&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;print("연결 끊김") <br>
-</font>
-</p>
-
-
-
-
-<script type="text/JavaScript">
-var fe = FindFrame("toc", top);
+<script type="text/JavaScript">var fe = FindFrame("toc", top);
 if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
   if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
     chmtop.c2wtopf.jstree.OpenTreeNode("" + chmtop.c2wtopf.pageid);
